@@ -31,7 +31,7 @@ const PublisherDetailsPage = () => {
   }, [id, currentPage])
 
   if (!publisher) {
-    return <div className="container py-5 text-center">Loading...</div>
+    return <div className="container py-5 text-center">Cargando...</div>
   }
 
   return (
@@ -46,7 +46,7 @@ const PublisherDetailsPage = () => {
         />
       )}
       <p className="lead mb-4">{publisher.description_raw || "No description available."}</p>
-      <h2 className="h3 mb-3">Games by {publisher.name}</h2>
+      {/* <h2 className="h3 mb-3">Games by {publisher.name}</h2> */}
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
         {games.map((game) => (
           <div key={game.id} className="col">

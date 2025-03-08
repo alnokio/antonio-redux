@@ -21,9 +21,9 @@ const HomePage = () => {
       <section className="mt-5">
         <h2 className="h3 mb-3">Explora los videojuegos</h2>
         <p className="lead mb-4">
-          Discover new and exciting games, search for your favorites, and explore detailed information about each title.
+          Aquí encontrarás todo lo que necesitas saber tus videojuegos favoritos.
         </p>
-        <Link to="/games" className="btn btn-primary btn-lg">
+        <Link to="/juegos" className="btn btn-primary btn-lg"> {/* cambiado games */}
           Start Exploring
         </Link>
       </section>

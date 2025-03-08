@@ -13,7 +13,7 @@ const GameCard = ({ game }) => {
         <h5 className="card-title">{game.name}</h5>
         <p className="card-text">Rating: {game.rating}/5</p>
         <Link to={`/game/${game.id}`} className="btn btn-primary">
-          View Details
+          DETALLES
         </Link>
       </div>
     </div>

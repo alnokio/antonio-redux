@@ -60,19 +60,19 @@ const GameDetailsPage = () => {
           <p>{game.description_raw}</p>
         </div>
         <div className="col-md-6">
-          <h2 className="h3 mb-3">Details</h2>
+          <h2 className="h3 mb-3">Detalles</h2>
           <ul className="list-group">
             <li className="list-group-item">
-              <strong>Release Date:</strong> {game.released}
+              <strong>Fecha de lanzamiento:</strong> {game.released}
             </li>
             <li className="list-group-item">
               <strong>Rating:</strong> {game.rating}/5
             </li>
             <li className="list-group-item">
-              <strong>Platforms:</strong> {game.platforms.map((p) => p.platform.name).join(", ")}
+              <strong>Plataformas:</strong> {game.platforms.map((p) => p.platform.name).join(", ")}
             </li>
             <li className="list-group-item">
-              <strong>Genres:</strong>
+              <strong>Géneros:</strong>
               {game.genres.map((genre, index) => (
                 <Link key={genre.id} to={`/games/genre/${genre.id}`} className="badge bg-secondary me-1">
                   {genre.name}

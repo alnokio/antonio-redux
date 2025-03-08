@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white py-3 mt-auto">
+    <footer className="bg-danger text-white py-3 mt-auto">
       <div className="container text-center">
-        <p className="m-0">&copy; 2023 GameExplorer. All rights reserved.</p>
+        <p className="m-0">&copy; 2025 AlnokioGaming. Todos los derechos reservados.</p>
       </div>
     </footer>
   )

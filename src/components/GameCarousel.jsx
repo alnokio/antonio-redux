@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const GameCarousel = ({ games }) => {
   if (games.length === 0) {
-    return <div className="text-center">Loading...</div>
+    return <div className="text-center">Cargando...</div>
   }
 
   return (
@@ -19,7 +19,7 @@ const GameCarousel = ({ games }) => {
             <div className="carousel-caption d-none d-md-block">
               <h3>{game.name}</h3>
               <Link to={`/game/${game.id}`} className="btn btn-primary mt-2">
-                View Details
+                DETALLES
               </Link>
             </div>
           </div>
@@ -31,7 +31,7 @@ const GameCarousel = ({ games }) => {
       </button>
       <button className="carousel-control-next" type="button" data-bs-target="#gameCarousel" data-bs-slide="next">
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
+        <span className="visually-hidden">Más</span>
       </button>
     </div>
   )

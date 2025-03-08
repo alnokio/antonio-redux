@@ -32,7 +32,7 @@ const GamesPage = () => {
 
   return (
     <div className="container py-5">
-      <h1 className="display-4 mb-4">Explore Games</h1>
+      <h1 className="display-4 mb-4">Explorar Juegos</h1>
       <form onSubmit={handleSearch} className="mb-4">
         <div className="input-group">
           <input
